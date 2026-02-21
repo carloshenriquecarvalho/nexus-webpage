@@ -32,3 +32,4 @@ desktop.ini
 # Tailwind / PostCSS (Arquivos temporários se houver)
 .parcel-cache/
 .cache/
+.cache
