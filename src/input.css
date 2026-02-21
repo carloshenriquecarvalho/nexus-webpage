@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+  /* Cores da Nexus */
+  --color-nexus-pink: #F21B80;        /* Seu azul principal */
+  --color-nexus-orange: #F24638;        /* Fundo dark elegante */
+  --color-nexus-accent: #6366f1;      /* Cor de destaque/detalhes */
+  
+  /* Você também pode definir fontes aqui */
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+}
