@@ -1,33 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexus - Tecnologia e Inovação</title>
     <link rel="stylesheet" href="./dist/output.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="src/assets/ico/ico.png" type="image/x-icon">
+    <link rel="shortcut icon" href="src/assets/ico/ico.ico" type="image/x-icon">
     <script src="./src/assets/js/main.js" defer></script>
 </head>
+
 <body class="bg-zinc-950 text-white font-sans antialiased">
+    <nav
+        class="fixed top-0 left-0 w-full z-50 py-5 lg:px-30 px-10 md:bg-gradient-to-r from-nexus-pink bg-black to-nexus-orange flex items-center justify-between">
+        <a href="#hero"><img src="src/assets/logo/white.png" class="w-20" alt="Logomarca Branca da Nexus"></a>
 
-    <section class="hero">
-        <nav class="relative menu py-6 px-10 md:p-10 bg-gradient-to-r from-nexus-pink to-nexus-orange flex items-center justify-between">
-    <img src="src/assets/logo/white.png" class="w-16" alt="Logomarca Branca da Nexus">
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none cursor-pointer">
+            <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 5h16" />
+                <path d="M4 12h16" />
+                <path d="M4 19h16" />
+            </svg>
+        </button>
 
-    <button id="menu-btn" class="text-white focus:outline-none cursor-pointer">
-        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/>
-        </svg>
-    </button>
+        <div class="hidden lg:hidden md:flex gap-5 lg:hi">
+            <a href="#services"
+                class="md:text-2xl lg:text-lg py-3 md:py-2 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors">Serviços</a>
+            <a href="#about"
+                class="md:text-2xl lg:text-lg py-3 md:py-2 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors">Sobre</a>
+            <a href="#contact"
+                class="md:text-2xl lg:text-lg md:py-2 py-3 text-white hover:text-nexus-pink transition-colors">Contato</a>
+        </div>
 
-    <div id="menu-mobile" class="hidden absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-md p-6 z-50 border-t border-white/10">
-        <a href="#" class="block py-3 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors">Serviços</a>
-        <a href="#" class="block py-3 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors">Sobre</a>
-        <a href="#" class="block py-3 text-white hover:text-nexus-pink transition-colors">Contato</a>
-    </div>
-</nav>
+        <button
+            class="text-black hidden bg-white lg:block cursor-pointer px-4 py-2 hover:border-2 hover:border-white rounded-full text-lg hover:bg-transparent hover:text-white hover:scale-105 transition-transform">
+            WhatsApp
+        </button>
+
+        <div id="menu-mobile"
+            class="hidden absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-md p-6 z-50 border-t border-white/10">
+            <a href="services"
+                class="block py-3 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors">Serviços</a>
+            <a href="about"
+                class="block py-3 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors">Sobre</a>
+            <a href="contact" class="block py-3 text-white hover:text-nexus-pink transition-colors">Contato</a>
+        </div>
+    </nav>
+    <section id="hero" class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+        
+        <img class="absolute inset-0 w-full h-full object-cover brightness-[0.3] z-0" src="src/assets/background/background-hero.png" alt="Background">
+
+        <div class="px-15 relative z-10 container mx-auto px-6 flex flex-col items-center text-center">
+            
+            <div class="max-w-3xl space-y-6">
+                <h1 class="text-4xl md:text-7xl font-extrabold text-white leading-tight">
+                    Sua clínica com <span class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange">tecnologia de elite.</span>
+                </h1>
+                
+                <p class="text-slate-300 text-lg md:text-2xl max-w-2xl mx-auto">
+                    Desenvolvemos ecossistemas digitais que automatizam sua captação e elevam o padrão do seu atendimento.
+                </p>
+                
+                <div class="pt-4">
+                    <button class="bg-gradient-to-r from-nexus-pink to-nexus-orange text-white px-10 py-5 rounded-full font-bold text-xl shadow-lg shadow-nexus-pink/30 hover:scale-105 transition-transform cursor-pointer">
+                        Quero escalar minha clínica!
+                    </button>
+                </div>
+            </div>
+        </div>
     </section>
-    
+    <section id="services" class="py-20 ">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="bg-zinc-900">i</div>
+            <div class="bg-zinc-900">i</div>
+            <div class="bg-zinc-900">i</div>
+        </div>
+    </section>
 </body>
+
 </html>
