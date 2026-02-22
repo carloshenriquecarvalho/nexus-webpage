@@ -1,5 +1,5 @@
 <!DOCTYPE >
-<html lang="pt-br" class="scroll-smooth">
+<html lang="pt-br" class="scroll-smooth scrollbar scrollbar-thumb-nexus-orange scrollbar-track-zinc-50 scrollbar-thin">
 
 <head>
     <meta charset="UTF-8">
@@ -11,9 +11,9 @@
     <script src="./src/assets/js/main.js" defer></script>
 </head>
 
-<body class="bg-zinc-950 text-white font-sans antialiased">
+<body class=" bg-zinc-950 text-white font-sans antialiased">
     <nav
-        class="fixed top-0 left-0 w-full z-50 py-5 lg:px-30 px-10 md:bg-gradient-to-r from-nexus-pink bg-zinc-900 to-nexus-orange flex items-center justify-between">
+        class="pr-10 fixed top-0 left-0 w-full z-50 py-5 lg:px-30 px-10 md:bg-gradient-to-r from-nexus-pink bg-zinc-900 to-nexus-orange flex items-center justify-between">
         <a href="#hero"><img src="src/assets/logo/white.png" class="w-20" alt="Logomarca Branca da Nexus"></a>
 
         <button id="menu-btn" class="md:hidden text-white focus:outline-none cursor-pointer">
@@ -122,21 +122,44 @@
             </div>
         </div>
     </section>
-    <section id="method">
-        <div class="grid grid-cols-1 mg:rid-cols-3">
-            <div>
-                <h3 class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange font-extrabold text-[40px]">01</h3>
-            </div>
-            <div>
-                <h3 class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange font-extrabold text-[40px]">02</h3>
-            </div>
-            <div>
-                <h3 class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange font-extrabold text-[40px]">03</h3>
-            </div>
-            <div>
-                <h3 class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange font-extrabold text-[40px]">04</h3>
-            </div>
+    <section id="method" class="px-30 md:px-25 py-20 bg-zinc-950">
+    <div class="mb-16 text-center md:text-left">
+        <h2 class="text-4xl font-bold">Nosso Método</h2>
+        <p class="text-slate-400 mt-2">Engenharia aplicada a cada etapa do seu crescimento.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        
+        <div class="space-y-4 border-l border-white/10 pl-6 relative">
+            <div class="absolute -left-[1px] top-0 h-10 w-[2px] bg-gradient-to-b from-nexus-pink to-transparent"></div>
+            
+            <h3 class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange font-extrabold text-5xl">01</h3>
+            <h4 class="text-xl font-bold">Diagnóstico</h4>
+            <p class="text-slate-400 text-sm">Unimos engenharia e análise de dados para criar um caminho previsível de crescimento para sua clínica.</p>
         </div>
-    </section>
+        <div class="space-y-4 border-l border-white/10 pl-6 relative">
+            <div class="absolute -left-[1px] top-0 h-10 w-[2px] bg-gradient-to-b from-nexus-pink to-transparent"></div>
+            
+            <h3 class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange font-extrabold text-5xl">02</h3>
+            <h4 class="text-xl font-bold">Diagnóstico</h4>
+            <p class="text-slate-400 text-sm">Analisamos seus dados e identificamos os gargalos da sua clínica.</p>
+        </div>
+        <div class="space-y-4 border-l border-white/10 pl-6 relative">
+            <div class="absolute -left-[1px] top-0 h-10 w-[2px] bg-gradient-to-b from-nexus-pink to-transparent"></div>
+            
+            <h3 class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange font-extrabold text-5xl">03</h3>
+            <h4 class="text-xl font-bold">Diagnóstico</h4>
+            <p class="text-slate-400 text-sm">Analisamos seus dados e identificamos os gargalos da sua clínica.</p>
+        </div>
+        <div class="space-y-4 border-l border-white/10 pl-6 relative">
+            <div class="absolute -left-[1px] top-0 h-10 w-[2px] bg-gradient-to-b from-nexus-pink to-transparent"></div>
+            
+            <h3 class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange font-extrabold text-5xl">04</h3>
+            <h4 class="text-xl font-bold">Diagnóstico</h4>
+            <p class="text-slate-400 text-sm">Analisamos seus dados e identificamos os gargalos da sua clínica.</p>
+        </div>
+
+        </div>
+</section>
 </body>
 </html>
