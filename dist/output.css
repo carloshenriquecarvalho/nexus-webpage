@@ -328,6 +328,9 @@
   .max-w-3xl {
     max-width: var(--container-3xl);
   }
+  .min-w-max {
+    min-width: max-content;
+  }
   .cursor-pointer {
     cursor: pointer;
   }
