@@ -44,3 +44,15 @@
 html {
   scrollbar-gutter: stable;
 }
+
+/* No seu input.css ou index.css */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
