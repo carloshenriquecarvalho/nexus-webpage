@@ -292,6 +292,9 @@
   .inline-block {
     display: inline-block;
   }
+  .inline-flex {
+    display: inline-flex;
+  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
