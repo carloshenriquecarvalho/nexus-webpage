@@ -1,4 +1,4 @@
-/*! tailwindcss v4.2.1 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.2.0 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -667,6 +667,9 @@
   .text-black {
     color: var(--color-black);
   }
+  .text-nexus-orange {
+    color: var(--color-nexus-orange);
+  }
   .text-nexus-pink {
     color: var(--color-nexus-pink);
   }
@@ -961,16 +964,6 @@
   .lg\:px-10 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 10);
-    }
-  }
-  .lg\:px-15 {
-    @media (width >= 64rem) {
-      padding-inline: calc(var(--spacing) * 15);
-    }
-  }
-  .lg\:px-20 {
-    @media (width >= 64rem) {
-      padding-inline: calc(var(--spacing) * 20);
     }
   }
   .lg\:px-30 {
