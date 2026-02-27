@@ -1,417 +1,290 @@
 <!doctype html>
-<html
-  lang="pt-br"
-  class="scroll-smooth scrollbar scrollbar-thumb-nexus-orange scrollbar-track-zinc-50 scrollbar-thin"
->
-  <head>
+<html lang="pt-br" class="scroll-smooth scrollbar scrollbar-thumb-nexus-orange scrollbar-track-zinc-50 scrollbar-thin">
+
+<head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nexus - Tecnologia e Inovação</title>
     <link rel="stylesheet" href="./dist/output.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description"
+        content="Nexus - Engenharia de Growth Marketing para clínicas de alto padrão. Escale seu faturamento com tráfego pago e inteligência de dados.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
     <script src="src/assets/js/app.js" defer></script>
-    <link
-      rel="shortcut icon"
-      href="src/assets/ico/ico.ico"
-      type="image/x-icon"
-    />
-  </head>
+    <link rel="shortcut icon" href="src/assets/ico/ico.ico" type="image/x-icon" />
+</head>
 
-  <body class="bg-zinc-950 text-white font-sans antialiased">
+<body class="bg-zinc-950 text-white font-sans antialiased">
     <nav
-      class="pr-10 fixed top-0 left-0 w-full z-50 py-5 lg:px-30 px-10 md:bg-gradient-to-r from-nexus-pink bg-zinc-900 to-nexus-orange flex items-center justify-between"
-    >
-      <a href="#hero"
-        ><img
-          loading="lazy"
-          src="src/assets/logo/white.png"
-          class="w-20"
-          alt="Logomarca Branca da Nexus"
-      /></a>
+        class="pr-10 fixed top-0 left-0 w-full z-50 py-5 lg:px-30 px-10 md:bg-gradient-to-r from-nexus-pink bg-zinc-900 to-nexus-orange flex items-center justify-between">
+        <a href="#hero"><img width="20" height="20" loading="lazy" src="src/assets/logo/white.webp" class="w-20"
+                alt="Logomarca Branca da Nexus" /></a>
 
-      <button
-        id="menu-btn"
-        class="md:hidden text-white focus:outline-none cursor-pointer"
-        aria-label="Menu"
-      >
-        <svg
-          class="w-10 h-10"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="3"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M4 5h16" />
-          <path d="M4 12h16" />
-          <path d="M4 19h16" />
-        </svg>
-      </button>
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none cursor-pointer" aria-label="Menu">
+            <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 5h16" />
+                <path d="M4 12h16" />
+                <path d="M4 19h16" />
+            </svg>
+        </button>
 
-      <div class="hidden lg:hidden md:flex gap-5 lg:hi">
-        <a
-          href="#services"
-          class="md:text-2xl lg:text-lg py-3 md:py-2 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors"
-          >Serviços</a
-        >
-        <a
-          href="#method"
-          class="md:text-2xl lg:text-lg py-3 md:py-2 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors"
-          >Metodologia</a
-        >
-        <a
-          href="#why-nexus"
-          class="md:text-2xl lg:text-lg md:py-2 py-3 text-white hover:text-nexus-pink transition-colors"
-          >Diferencial</a
-        >
-        <a
-          href="#faq"
-          class="md:text-2xl lg:text-lg md:py-2 py-3 text-white hover:text-nexus-pink transition-colors"
-          >FAQ</a
-        >
-      </div>
+        <div class="hidden lg:hidden md:flex gap-5 lg:hi">
+            <a href="#services"
+                class="md:text-2xl lg:text-lg py-3 md:py-2 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors">Serviços</a>
+            <a href="#method"
+                class="md:text-2xl lg:text-lg py-3 md:py-2 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors">Metodologia</a>
+            <a href="#why-nexus"
+                class="md:text-2xl lg:text-lg md:py-2 py-3 text-white hover:text-nexus-pink transition-colors">Diferencial</a>
+            <a href="#faq"
+                class="md:text-2xl lg:text-lg md:py-2 py-3 text-white hover:text-nexus-pink transition-colors">FAQ</a>
+        </div>
 
-      <a
-        href="https://wa.me/556196550552"
-        target="_blank"
-        class="text-black hidden bg-white lg:block px-4 py-2 rounded-full text-lg hover:bg-transparent hover:text-white border border-transparent hover:border-white transition-all text-center"
-      >
-        WhatsApp
-      </a>
+        <a href="https://wa.me/556196550552" target="_blank"
+            class="text-zinc-950 font-bold hidden bg-white lg:block px-4 py-2 rounded-full text-lg hover:bg-transparent hover:text-white border border-transparent hover:border-white transition-all text-center">
+            WhatsApp
+        </a>
 
-      <div
-        id="menu-mobile"
-        class="hidden absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-md p-6 z-50 border-t border-white/10"
-      >
-        <a
-          href="#services"
-          class="block py-3 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors"
-          >Serviços</a
-        >
-        <a
-          href="#method"
-          class="block py-3 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors"
-          >Metodologia</a
-        >
-        <a
-          href="#why-nexus"
-          class="block py-3 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors"
-          >Diferencial</a
-        >
-        <a
-          href="#contact"
-          class="block py-3 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors"
-          >Entre em contato</a
-        >
-        <a
-          href="#faq"
-          class="block py-3 text-white hover:text-nexus-pink transition-colors"
-          >FAQ</a
-        >
-      </div>
+        <div id="menu-mobile"
+            class="hidden absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-md p-6 z-50 border-t border-white/10">
+            <a href="#services"
+                class="block py-3 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors">Serviços</a>
+            <a href="#method"
+                class="block py-3 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors">Metodologia</a>
+            <a href="#why-nexus"
+                class="block py-3 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors">Diferencial</a>
+            <a href="#contact"
+                class="block py-3 text-white border-b border-white/5 last:border-0 hover:text-nexus-pink transition-colors">Entre
+                em contato</a>
+            <a href="#faq" class="block py-3 text-white hover:text-nexus-pink transition-colors">FAQ</a>
+        </div>
     </nav>
-    <section
-      id="hero"
-      class="relative w-full h-screen flex items-center justify-center overflow-hidden"
-    >
-      <img
-        loading="lazy"
-        class="absolute inset-0 w-full h-full object-cover brightness-[0.3] z-0"
-        src="src/assets/background/background-hero.png"
-        alt="Background"
-      />
+    <section id="hero" class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+        <img loading="lazy" class="absolute inset-0 w-full h-full object-cover brightness-[0.3] z-0"
+            src="src/assets/background/background.webp" alt="Background" />
 
-      <div
-        class="px-15 relative z-10 container mx-auto px-6 flex flex-col items-center text-center"
-      >
-        <div class="max-w-3xl space-y-6">
-          <h1
-            class="text-4xl md:text-7xl font-extrabold text-white leading-tight"
-          >
-            Sua clínica em 
-            <span
-              class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange"
-              >escala de faturamento.</span
-            >
-          </h1>
+        <div class="px-15 relative z-10 container mx-auto px-6 flex flex-col items-center text-center">
+            <div class="max-w-3xl space-y-6">
+                <h1 class="text-4xl md:text-7xl font-extrabold text-white leading-tight">
+                    Sua clínica em
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange">escala
+                        de faturamento.</span>
+                </h1>
 
-          <p class="text-slate-300 text-lg md:text-2xl max-w-2xl mx-auto">
-            Não somos uma agência de posts. Atraia pacientes de alto ticket com ROI otimizado através de Growth Marketing.
-          </p>
+                <p class="text-slate-300 text-lg md:text-2xl max-w-2xl mx-auto">
+                    Não somos uma agência de posts. Atraia pacientes de alto ticket com ROI otimizado através de Growth
+                    Marketing.
+                </p>
 
-          <div class="pt-4">
-            <a
-              href="https://wa.me/556196550552"
-              target="_blank"
-              class="inline-flex items-center justify-center bg-gradient-to-r from-nexus-pink to-nexus-orange text-white px-8 py-5 rounded-full font-bold text-xl shadow-lg shadow-nexus-pink/30 hover:scale-105 transition-transform cursor-pointer text-center min-w-max"
-            >
-              Quero escalar minha clínica!
-            </a>
-          </div>
+                <div class="pt-4">
+                    <a href="https://wa.me/556196550552" target="_blank"
+                        class="inline-flex items-center justify-center bg-gradient-to-r from-nexus-pink to-nexus-orange text-white px-8 py-5 rounded-full font-bold text-xl shadow-lg shadow-nexus-pink/30 hover:scale-105 transition-transform cursor-pointer text-center min-w-max">
+                        Quero escalar minha clínica!
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-    <section
-      id="services"
-      class="gap-10 flex flex-col py-20 lg:py-60 text-center px-10"
-    >
-      <h2 class="text-[40px] font-bold align-center">
-        Soluções que trazem resultado
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 px-15">
-        <div
-          class="reveal bg-zinc-900 py-10 px-5 lg:px-10 items-center flex flex-col rounded-xl"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="100"
-            height="100"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="0.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-aperture-icon lucide-aperture"
-          >
-            <circle cx="12" cy="12" r="10" />
-            <path d="m14.31 8 5.74 9.94" />
-            <path d="M9.69 8h11.48" />
-            <path d="m7.38 12 5.74-9.94" />
-            <path d="M9.69 16 3.95 6.06" />
-            <path d="M14.31 16H2.83" />
-            <path d="m16.62 12-5.74 9.94" />
-          </svg>
-          <p class="text-2xl">Engenharia de Conversão</p>
-          <p class="opacity-70">
-            Transformamos cliques em agendamentos. Otimizamos cada etapa do seu funil de vendas para garantir que nenhum centavo do seu investimento em marketing seja desperdiçado.
-          </p>
+    <section id="services" class="gap-10 flex flex-col py-20 lg:py-60 text-center px-10">
+        <h2 class="text-[40px] font-bold align-center">
+            Soluções que trazem resultado
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 px-15">
+            <div class="reveal bg-zinc-900 py-10 px-5 lg:px-10 items-center flex flex-col rounded-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-aperture-icon lucide-aperture">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="m14.31 8 5.74 9.94" />
+                    <path d="M9.69 8h11.48" />
+                    <path d="m7.38 12 5.74-9.94" />
+                    <path d="M9.69 16 3.95 6.06" />
+                    <path d="M14.31 16H2.83" />
+                    <path d="m16.62 12-5.74 9.94" />
+                </svg>
+                <p class="text-2xl">Engenharia de Conversão</p>
+                <p class="opacity-70">
+                    Transformamos cliques em agendamentos. Otimizamos cada etapa do seu funil de vendas para garantir
+                    que nenhum centavo do seu investimento em marketing seja desperdiçado.
+                </p>
+            </div>
+            <div class="reveal bg-zinc-900 rounded-xl py-10 px-5 lg:px-10 items-center flex flex-col">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-megaphone-icon lucide-megaphone">
+                    <path
+                        d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
+                    <path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14" />
+                    <path d="M8 6v8" />
+                </svg>
+                <p class="text-2xl">Tráfego Pago</p>
+                <p class="opacity-70">
+                    Anúncios cirúrgicos para quem busca o seu serviço hoje. Dominamos o Google e Meta Ads para encher
+                    sua agenda com leads qualificados, não apenas curiosos.
+                </p>
+            </div>
+            <div class="reveal bg-zinc-900 rounded-xl py-10 px-5 lg:px-10 items-center flex flex-col">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-laptop-icon lucide-laptop">
+                    <path
+                        d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z" />
+                    <path d="M20.054 15.987H3.946" />
+                </svg>
+                <p class="text-2xl">Automação de Leads</p>
+                <p class="opacity-70">
+                    Implementamos fluxos que organizam seus contatos e evitam que leads 'esfriem' no WhatsApp.
+                </p>
+            </div>
         </div>
-        <div
-          class="reveal bg-zinc-900 rounded-xl py-10 px-5 lg:px-10 items-center flex flex-col"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="100"
-            height="100"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="0.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-megaphone-icon lucide-megaphone"
-          >
-            <path
-              d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"
-            />
-            <path
-              d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"
-            />
-            <path d="M8 6v8" />
-          </svg>
-          <p class="text-2xl">Tráfego Pago</p>
-          <p class="opacity-70">
-            Anúncios cirúrgicos para quem busca o seu serviço hoje. Dominamos o Google e Meta Ads para encher sua agenda com leads qualificados, não apenas curiosos.
-          </p>
-        </div>
-        <div
-          class="reveal bg-zinc-900 rounded-xl py-10 px-5 lg:px-10 items-center flex flex-col"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="100"
-            height="100"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="0.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-laptop-icon lucide-laptop"
-          >
-            <path
-              d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z"
-            />
-            <path d="M20.054 15.987H3.946" />
-          </svg>
-          <p class="text-2xl">Automação de Leads</p>
-          <p class="opacity-70">
-            Implementamos fluxos que organizam seus contatos e evitam que leads 'esfriem' no WhatsApp.
-          </p>
-        </div>
-      </div>
     </section>
     <section id="method" class="reveal px-10 md:px-25 bg-zinc-950">
-      <div class="mb-16 text-center md:text-left">
-        <h2 class="text-4xl font-bold">Nosso Método</h2>
-        <p class="text-slate-400 mt-2">
-          Engenharia aplicada a cada etapa do seu crescimento.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
-        <div class="space-y-4 border-l border-white/10 pl-6 relative">
-          <div
-            class="absolute -left-[1px] top-0 h-10 w-[2px] bg-gradient-to-b from-nexus-pink to-transparent"
-          ></div>
-
-          <h3
-            class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange font-extrabold text-5xl"
-          >
-            01
-          </h3>
-          <h4 class="text-xl font-bold">Diagnóstico de Mercado</h4>
-          <p class="text-slate-400 text-sm">
-            Analisamos a demanda na sua região e identificamos o seu público de maior valor.
-          </p>
+        <div class="mb-16 text-center md:text-left">
+            <h2 class="text-4xl font-bold">Nosso Método</h2>
+            <p class="text-slate-400 mt-2">
+                Engenharia aplicada a cada etapa do seu crescimento.
+            </p>
         </div>
-        <div class="space-y-4 border-l border-white/10 pl-6 relative">
-          <div
-            class="absolute -left-[1px] top-0 h-10 w-[2px] bg-gradient-to-b from-nexus-pink to-transparent"
-          ></div>
 
-          <h3
-            class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange font-extrabold text-5xl"
-          >
-            02
-          </h3>
-          <h4 class="text-xl font-bold">Ativação de Funil</h4>
-          <p class="text-slate-400 text-sm">
-            Desenhamos a jornada de compra que faz o paciente escolher você, eliminando as distrações da concorrência.
-          </p>
-        </div>
-        <div class="space-y-4 border-l border-white/10 pl-6 relative">
-          <div
-            class="absolute -left-[1px] top-0 h-10 w-[2px] bg-gradient-to-b from-nexus-pink to-transparent"
-          ></div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div class="space-y-4 border-l border-white/10 pl-6 relative">
+                <div class="absolute -left-[1px] top-0 h-10 w-[2px] bg-gradient-to-b from-nexus-pink to-transparent">
+                </div>
 
-          <h3
-            class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange font-extrabold text-5xl"
-          >
-            03
-          </h3>
-          <h4 class="text-xl font-bold">Tração e Aquisição</h4>
-          <p class="text-slate-400 text-sm">
-            Colocamos o motor de vendas para rodar com precisão de engenharia, focando no menor custo por agendamento (CPA).
-          </p>
-        </div>
-        <div class="space-y-4 border-l border-white/10 pl-6 relative">
-          <div
-            class="absolute -left-[1px] top-0 h-10 w-[2px] bg-gradient-to-b from-nexus-pink to-transparent"
-          ></div>
+                <h3
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange font-extrabold text-5xl">
+                    01
+                </h3>
+                <h4 class="text-xl font-bold">Diagnóstico de Mercado</h4>
+                <p class="text-slate-400 text-sm">
+                    Analisamos a demanda na sua região e identificamos o seu público de maior valor.
+                </p>
+            </div>
+            <div class="space-y-4 border-l border-white/10 pl-6 relative">
+                <div class="absolute -left-[1px] top-0 h-10 w-[2px] bg-gradient-to-b from-nexus-pink to-transparent">
+                </div>
 
-          <h3
-            class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange font-extrabold text-5xl"
-          >
-            04
-          </h3>
-          <h4 class="text-xl font-bold">Escala Baseada em Dados</h4>
-          <p class="text-slate-400 text-sm">
-            Monitoramos o ROI em tempo real. Se o dado mostra lucro, nós escalamos o investimento.
-          </p>
+                <h3
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange font-extrabold text-5xl">
+                    02
+                </h3>
+                <h4 class="text-xl font-bold">Ativação de Funil</h4>
+                <p class="text-slate-400 text-sm">
+                    Desenhamos a jornada de compra que faz o paciente escolher você, eliminando as distrações da
+                    concorrência.
+                </p>
+            </div>
+            <div class="space-y-4 border-l border-white/10 pl-6 relative">
+                <div class="absolute -left-[1px] top-0 h-10 w-[2px] bg-gradient-to-b from-nexus-pink to-transparent">
+                </div>
+
+                <h3
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange font-extrabold text-5xl">
+                    03
+                </h3>
+                <h4 class="text-xl font-bold">Tração e Aquisição</h4>
+                <p class="text-slate-400 text-sm">
+                    Colocamos o motor de vendas para rodar com precisão de engenharia, focando no menor custo por
+                    agendamento (CPA).
+                </p>
+            </div>
+            <div class="space-y-4 border-l border-white/10 pl-6 relative">
+                <div class="absolute -left-[1px] top-0 h-10 w-[2px] bg-gradient-to-b from-nexus-pink to-transparent">
+                </div>
+
+                <h3
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-nexus-pink to-nexus-orange font-extrabold text-5xl">
+                    04
+                </h3>
+                <h4 class="text-xl font-bold">Escala Baseada em Dados</h4>
+                <p class="text-slate-400 text-sm">
+                    Monitoramos o ROI em tempo real. Se o dado mostra lucro, nós escalamos o investimento.
+                </p>
+            </div>
         </div>
-      </div>
     </section>
-    <section
-      id="why-nexus"
-      class="pt-40 px-10 md:px-25 flex flex-col md:flex-row items-center gap-16"
-    >
-      <div class="w-full md:w-1/2">
-        <div
-          class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-nexus-pink/10"
-        >
-          <img
-            src="src/assets/img/why-nexus.png"
-            class="reveal w-full h-auto opacity-90"
-            loading="lazy"
-            alt="Inteligência Nexus"
-          />
+    <section id="why-nexus" class="pt-40 px-10 md:px-25 flex flex-col md:flex-row items-center gap-16">
+        <div class="w-full md:w-1/2">
+            <div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-nexus-pink/10">
+                <img width="400" height="600" src="src/assets/img/why-nexus.png" class="reveal w-full h-auto opacity-90" loading="lazy"
+                    alt="Inteligência Nexus" />
+            </div>
         </div>
-      </div>
 
-      <div class="w-full md:w-1/2 space-y-10">
-        <h2 class="text-4xl md:text-5xl font-bold">
-          Por que a <span class="text-nexus-pink">Nexus</span>?
-        </h2>
+        <div class="w-full md:w-1/2 space-y-10">
+            <h2 class="text-4xl md:text-5xl font-bold">
+                Por que a <span class="text-nexus-pink">Nexus</span>?
+            </h2>
 
-        <div class="space-y-8">
-          <div class="reveal">
-            <h4 class="text-xl font-bold text-white mb-2">
-              Foco 100% em ROI
-            </h4>
-            <p class="text-slate-400">
-              Agências focam em curtidas. A Nexus foca em faturamento. Se não gera retorno sobre o investimento, nós não fazemos.
-            </p>
-          </div>
+            <div class="space-y-8">
+                <div class="reveal">
+                    <h3 class="text-xl font-bold text-white mb-2">
+                        Foco 100% em ROI
+                    </h3>
+                    <p class="text-slate-400">
+                        Agências focam em curtidas. A Nexus foca em faturamento. Se não gera retorno sobre o
+                        investimento, nós não fazemos.
+                    </p>
+                </div>
 
-          <div class="reveal">
-            <h4 class="text-xl font-bold text-white mb-2">
-              Tecnologia a favor da Venda
-            </h4>
-            <p class="text-slate-400">
-              Usamos nossa base de engenharia para criar páginas que carregam instantaneamente e convertem mais. A velocidade é para o seu lead não desistir da compra.
-            </p>
-          </div>
-          <div class="reveal">
-            <h4 class="text-xl font-bold text-white mb-2">
-              Transparência de Dados
-            </h4>
-            <p class="text-slate-400">
-              Você terá um Dashboard real. Chega de relatórios de vaidade. Você verá quantos leads entraram e quanto cada um custou para o seu bolso.
-            </p>
-          </div>
-          <div class="reveal">
-            <h4 class="text-xl font-bold text-white mb-2">
-              Exclusividade Geográfica
-            </h4>
-            <p class="text-slate-400">
-              Nós não trabalhamos para todo mundo. Para garantir a eficácia do
-              nosso tráfego pago e a autoridade da marca, limitamos o número de
-              clínicas parceiras por região. Ter a Nexus é um diferencial
-              competitivo real.
-            </p>
-          </div>
+                <div class="reveal">
+                    <h3 class="text-xl font-bold text-white mb-2">
+                        Tecnologia a favor da Venda
+                    </h3>
+                    <p class="text-slate-400">
+                        Usamos nossa base de engenharia para criar páginas que carregam instantaneamente e convertem
+                        mais. A velocidade é para o seu lead não desistir da compra.
+                    </p>
+                </div>
+                <div class="reveal">
+                    <h3 class="text-xl font-bold text-white mb-2">
+                        Transparência de Dados
+                    </h3>
+                    <p class="text-slate-400">
+                        Você terá um Dashboard real. Chega de relatórios de vaidade. Você verá quantos leads entraram e
+                        quanto cada um custou para o seu bolso.
+                    </p>
+                </div>
+                <div class="reveal">
+                    <h3 class="text-xl font-bold text-white mb-2">
+                        Exclusividade Geográfica
+                    </h3>
+                    <p class="text-slate-400">
+                        Nós não trabalhamos para todo mundo. Para garantir a eficácia do
+                        nosso tráfego pago e a autoridade da marca, limitamos o número de
+                        clínicas parceiras por região. Ter a Nexus é um diferencial
+                        competitivo real.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <section id="faq" class="reveal py-20 px-10 md:px-25 bg-zinc-950">
-      <div class="flex flex-col md:flex-row gap-16">
-        <div class="md:w-1/3">
-          <h2 class="text-4xl font-bold">
-            Dúvidas <br />
-            <span class="text-nexus-pink">Frequentes</span>
-          </h2>
-          <p class="text-slate-400 mt-4">
-            Tudo o que você precisa saber para dar o próximo passo com
-            segurança.
-          </p>
-        </div>
+        <div class="flex flex-col md:flex-row gap-16">
+            <div class="md:w-1/3">
+                <h2 class="text-4xl font-bold">
+                    Dúvidas <br />
+                    <span class="text-nexus-pink">Frequentes</span>
+                </h2>
+                <p class="text-slate-400 mt-4">
+                    Tudo o que você precisa saber para dar o próximo passo com
+                    segurança.
+                </p>
+            </div>
 
-        <div class="md:w-2/3 space-y-4">
-          <details
-            class="group bg-zinc-900 rounded-2xl p-6 border border-white/5 cursor-pointer"
-          >
-            <summary
-              class="flex items-center justify-between font-bold text-lg list-none"
-            >
-              <span>A Nexus atende qualquer tipo de clínica?</span>
-              <span
-                class="text-nexus-pink group-open:rotate-180 transition-transform"
-                >+</span
-              >
-            </summary>
-            <p class="text-slate-400 mt-4 leading-relaxed">
-              Focamos em clínicas que buscam o público de alto padrão. Nossa
-              engenharia é desenhada para serviços de alto ticket que exigem um
-              posicionamento de elite.
-            </p>
-          </details>
+            <div class="md:w-2/3 space-y-4">
+                <details class="group bg-zinc-900 rounded-2xl p-6 border border-white/5 cursor-pointer">
+                    <summary class="flex items-center justify-between font-bold text-lg list-none">
+                        <span>A Nexus atende qualquer tipo de clínica?</span>
+                        <span class="text-nexus-pink group-open:rotate-180 transition-transform">+</span>
+                    </summary>
+                    <p class="text-slate-400 mt-4 leading-relaxed">
+                        Focamos em clínicas que buscam o público de alto padrão. Nossa
+                        engenharia é desenhada para serviços de alto ticket que exigem um
+                        posicionamento de elite.
+                    </p>
+                </details>
 
           <details
             class="group bg-zinc-900 rounded-2xl p-6 border border-white/5 cursor-pointer"
@@ -426,7 +299,7 @@
               >
             </summary>
             <p class="text-slate-400 mt-4">
-              Instalamos rastreamento avançado (API de Conversão e GTM) que nos permite saber exatamente qual anúncio gerou o dinheiro no seu caixa, e não apenas quem clicou por curiosidade.
+              Instalamos rastreamento avançado (API de Conversão e GTM) que nos permite saber exatamente qual anúncio gerou o dinheiro no seu caixa, e não apenas quem clicou por curiosidade." (Isso mostra que você domina o Nível 2 da Alura).
             </p>
           </details>
           <details
@@ -452,162 +325,127 @@
     </section>
 
     <section id="contact" class="reveal py-20 px-10 md:px-25 bg-zinc-950">
-      <div
-        class="max-w-4xl mx-auto bg-zinc-900 border border-white/10 p-10 rounded-3xl"
-      >
-        <h2 class="text-3xl font-bold mb-6 text-center">
-          Diagnóstico de <span class="text-nexus-pink">Escalabilidade</span>
-        </h2>
+        <div class="max-w-4xl mx-auto bg-zinc-900 border border-white/10 p-10 rounded-3xl">
+            <h2 class="text-3xl font-bold mb-6 text-center">
+                Diagnóstico de <span class="text-nexus-pink">Escalabilidade</span>
+            </h2>
 
-        <form id="nexusForm" class="space-y-6">
-          <input type="hidden" id="utm_source" name="utm_source" />
-          <input type="hidden" id="utm_campaign" name="utm_campaign" />
-          <input type="hidden" id="gclid" name="gclid" />
-          <input type="hidden" name="status" value="Novo Lead" />
-          <input type="hidden" name="data" id="form_data" />
+            <form id="nexusForm" class="space-y-6">
+                <input type="hidden" id="utm_source" name="utm_source" />
+                <input type="hidden" id="utm_campaign" name="utm_campaign" />
+                <input type="hidden" id="gclid" name="gclid" />
+                <input type="hidden" name="status" value="Novo Lead" />
+                <input type="hidden" name="data" id="form_data" />
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <input
-              type="text"
-              name="nome"
-              placeholder="Seu Nome"
-              required
-              class="bg-zinc-950 border border-white/5 p-4 rounded-xl focus:border-nexus-pink outline-none transition"
-            />
-            <input
-              type="tel"
-              name="whatsapp"
-              placeholder="WhatsApp (com DDD)"
-              required
-              class="bg-zinc-950 border border-white/5 p-4 rounded-xl focus:border-nexus-pink outline-none transition"
-            />
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex flex-col">
+                        <label for="nome" class="sr-only">Seu Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu Nome" required
+                            class="bg-zinc-950 border border-white/5 p-4 rounded-xl focus:border-nexus-pink outline-none transition w-full" />
+                    </div>
 
-            <select
-              name="servico"
-              required
-              class="bg-zinc-950 border border-white/5 p-4 rounded-xl focus:border-nexus-pink outline-none transition text-zinc-400"
-            >
-              <option value="" disabled selected>Serviço de interesse</option>
-              <option value="Trafego Pago">Tráfego Pago (Captação)</option>
-              <option value="Automacao">Automação de Processos</option>
-              <option value="Consultoria">Consultoria Completa (Nexus)</option>
-            </select>
+                    <div class="flex flex-col">
+                        <label for="whatsapp" class="sr-only">WhatsApp (com DDD)</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="WhatsApp (com DDD)" required
+                            class="bg-zinc-950 border border-white/5 p-4 rounded-xl focus:border-nexus-pink outline-none transition w-full" />
+                    </div>
 
-            <select
-              name="faturamento"
-              required
-              class="bg-zinc-950 border border-white/5 p-4 rounded-xl focus:border-nexus-pink outline-none transition text-zinc-400"
-            >
-              <option value="" disabled selected>
-                Faturamento Mensal da Clínica
-              </option>
-              <option value="Abaixo de 20k">Até R$ 20.000</option>
-              <option value="20k-50k">R$ 20.000 a R$ 50.000</option>
-              <option value="50k-100k">R$ 50.000 a R$ 100.000</option>
-              <option value="Acima de 100k">Acima de R$ 100.000 (Elite)</option>
-            </select>
-          </div>
+                    <div class="flex flex-col">
+                        <label for="servico" class="sr-only">Serviço de interesse</label>
+                        <select id="servico" name="servico" required
+                            class="bg-zinc-950 border border-white/5 p-4 rounded-xl focus:border-nexus-pink outline-none transition text-zinc-400 w-full">
+                            <option value="" disabled selected>Serviço de interesse</option>
+                            <option value="Trafego Pago">Tráfego Pago (Captação)</option>
+                            <option value="Automacao">Automação de Processos</option>
+                            <option value="Consultoria">Consultoria Completa (Nexus)</option>
+                        </select>
+                    </div>
 
-          <textarea
-            name="pergunta_qualificacao"
-            placeholder="Qual o seu maior desafio hoje? (Ex: Falta de leads qualificados)"
-            rows="3"
-            class="w-full bg-zinc-950 border border-white/5 p-4 rounded-xl focus:border-nexus-pink outline-none transition"
-          ></textarea>
+                    <div class="flex flex-col">
+                        <label for="faturamento" class="sr-only">Faturamento Mensal da Clínica</label>
+                        <select id="faturamento" name="faturamento" required
+                            class="bg-zinc-950 border border-white/5 p-4 rounded-xl focus:border-nexus-pink outline-none transition text-zinc-400 w-full">
+                            <option value="" disabled selected>Faturamento Mensal</option>
+                            <option value="Abaixo de 20k">Até R$ 20.000</option>
+                            <option value="20k-50k">R$ 20.000 a R$ 50.000</option>
+                            <option value="50k-100k">R$ 50.000 a R$ 100.000</option>
+                            <option value="Acima de 100k">Acima de R$ 100.000 (Elite)</option>
+                        </select>
+                    </div>
+                </div>
 
-          <button
-            id="btnSubmit"
-            type="submit"
-            aria-label="Solicitar Diagnóstico!"
-            class="w-full bg-gradient-to-r from-nexus-pink to-nexus-orange py-4 rounded-full font-bold text-lg hover:scale-[1.02] transition-transform cursor-pointer"
-          >
-            Solicitar Diagnóstico
-          </button>
-        </form>
-      </div>
+                <textarea name="pergunta_qualificacao"
+                    placeholder="Qual o seu maior desafio hoje? (Ex: Falta de leads qualificados)" rows="3"
+                    class="w-full bg-zinc-950 border border-white/5 p-4 rounded-xl focus:border-nexus-pink outline-none transition"></textarea>
+
+                <button id="btnSubmit" type="submit" aria-label="Solicitar Diagnóstico!"
+                    class="w-full bg-gradient-to-r from-nexus-pink to-nexus-orange py-4 rounded-full font-bold text-lg hover:scale-[1.02] transition-transform cursor-pointer">
+                    Solicitar Diagnóstico
+                </button>
+            </form>
+        </div>
     </section>
 
     <section class="reveal py-20 px-10 md:px-25 text-center">
-      <div
-        class="bg-gradient-to-r from-nexus-pink/10 to-nexus-orange/10 border border-white/10 p-12 rounded-3xl"
-      >
-        <h2 class="text-3xl md:text-5xl font-bold mb-6">
-          Pronta para elevar o padrão da sua clínica?
-        </h2>
-        <p class="text-slate-400 mb-10 max-w-2xl mx-auto">
-          As vagas para novos ecossistemas são limitadas por região. Garanta sua
-          análise de viabilidade hoje mesmo.
-        </p>
-        <a
-          href="https://wa.me/556196550552"
-          alt
-          class="inline-block bg-white text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-nexus-pink hover:text-white transition-all"
-        >
-          Falar com um Especialista
-        </a>
-      </div>
+        <div class="bg-gradient-to-r from-nexus-pink/10 to-nexus-orange/10 border border-white/10 p-12 rounded-3xl">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                Pronta para elevar o padrão da sua clínica?
+            </h2>
+            <p class="text-slate-400 mb-10 max-w-2xl mx-auto">
+                As vagas para novos ecossistemas são limitadas por região. Garanta sua
+                análise de viabilidade hoje mesmo.
+            </p>
+            <a href="https://wa.me/556196550552" alt
+                class="inline-block bg-white text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-nexus-pink hover:text-white transition-all">
+                Falar com um Especialista
+            </a>
+        </div>
     </section>
 
-    <footer
-      class="reveal bg-zinc-950 border-t border-white/5 pt-16 pb-8 px-10 md:px-25"
-    >
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-        <div class="space-y-6">
-          <img
-            src="src/assets/logo/white + gradient (1).png"
-            loading="lazy"
-            class="w-60"
-            alt="Nexus Logo"
-          />
-          <p class="text-slate-500 text-sm leading-relaxed">
-            Tecnologia e Engenharia de Dados aplicadas ao crescimento de
-            clínicas de alto padrão. O futuro da sua captação começa aqui.
-          </p>
+    <footer class="reveal bg-zinc-950 border-t border-white/5 pt-16 pb-8 px-10 md:px-25">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div class="space-y-6">
+                <img src="src/assets/logo/white + gradient (1).png" loading="lazy" class="w-60" alt="Nexus Logo" />
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    Tecnologia e Engenharia de Dados aplicadas ao crescimento de
+                    clínicas de alto padrão. O futuro da sua captação começa aqui.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-bold text-white">Navegação</h4>
+                <ul class="text-slate-500 space-y-2 text-sm">
+                    <li>
+                        <a href="#hero" class="hover:text-nexus-pink transition">Início</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="hover:text-nexus-pink transition">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#method" class="hover:text-nexus-pink transition">Metodologia</a>
+                    </li>
+                    <li>
+                        <a href="#faq" class="hover:text-nexus-pink transition">Dúvidas</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-bold text-white">Contato</h4>
+                <p class="text-slate-500 text-sm">nexuscontactmomentum@gmail.com</p>
+                <div class="flex gap-4"></div>
+            </div>
         </div>
 
-        <div class="space-y-4">
-          <h4 class="font-bold text-white">Navegação</h4>
-          <ul class="text-slate-500 space-y-2 text-sm">
-            <li>
-              <a href="#hero" class="hover:text-nexus-pink transition"
-                >Início</a
-              >
-            </li>
-            <li>
-              <a href="#services" class="hover:text-nexus-pink transition"
-                >Serviços</a
-              >
-            </li>
-            <li>
-              <a href="#method" class="hover:text-nexus-pink transition"
-                >Metodologia</a
-              >
-            </li>
-            <li>
-              <a href="#faq" class="hover:text-nexus-pink transition"
-                >Dúvidas</a
-              >
-            </li>
-          </ul>
+        <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-slate-600 text-xs">
+                © 2026 Nexus Tecnologia e Inovação. Todos os direitos reservados.
+            </p>
+            <p class="text-slate-600 text-xs font-mono uppercase tracking-widest">
+                CNPJ: 59.245.046/0001-13
+            </p>
         </div>
-
-        <div class="space-y-4">
-          <h4 class="font-bold text-white">Contato</h4>
-          <p class="text-slate-500 text-sm">nexuscontactmomentum@gmail.com</p>
-          <div class="flex gap-4"></div>
-        </div>
-      </div>
-
-      <div
-        class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
-      >
-        <p class="text-slate-600 text-xs">
-          © 2026 Nexus Tecnologia e Inovação. Todos os direitos reservados.
-        </p>
-        <p class="text-slate-600 text-xs font-mono uppercase tracking-widest">
-          CNPJ: 59.245.046/0001-13
-        </p>
-      </div>
     </footer>
-  </body>
+</body>
+
 </html>
